@@ -6,6 +6,11 @@
   background-color: @bg-color;
 }
 
+.font-setup (@font-family, @font-color: black) {
+  font-family: @font-family, sans-serif;
+  color: @font-color;
+}
+
 .btn-setup(@color: @btn-bg-color, @font-color: white, @width: 20rem, @height: 4.4rem, @radius: 1.5rem, @font-size: 1.8rem) {
   .colorize(@font-color, @color);
   width: @width;
