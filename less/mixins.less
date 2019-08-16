@@ -1,3 +1,18 @@
 // main: index.less
 
 // Mixins Here
+.btn-setup(@color: @btn-bg-color, @font-color: white, @width: 20rem, @height: 4.4rem, @radius: 1.5rem, @font-size: 1.8rem) {
+  color: @font-color;
+  width: @width;
+  height: @height;
+  border-radius: @radius;
+  background-color: @color;
+  font-size: @font-size;
+  text-align: center;
+  line-height: @height;
+
+  &:hover {
+    color: darken(@font-color, 10%);
+    background-color: darken(@color, 10%);
+  }
+}
