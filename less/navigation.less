@@ -1,1 +1,31 @@
+// main: index.less
+
 // Navigation code here
+.top-nav {
+  height: 10rem;
+  width: 100%;
+
+  .colorize(@nav-font, @nav-bg);
+  border-bottom: 2px solid @nav-border;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    margin: 1.3rem 0 1.9rem;
+    font-size: 4rem;
+  }
+
+  .links {
+    display: flex;
+    justify-content: space-around;
+    width: 41rem;
+
+    a {
+      color: @nav-font;
+      font-size: 1.6rem;
+      text-decoration: none;
+    }
+  }
+}
